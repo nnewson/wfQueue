@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
+project(wfQueue)
+
 # Find GTest
 enable_testing()
 find_package(GTest REQUIRED)
