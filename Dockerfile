@@ -1,8 +1,8 @@
-# Download Ubuntu 18.04
-FROM ubuntu:18.04
+# Download Ubuntu 20.04
+FROM ubuntu:20.04
 
 # Copy the executable into the container
-COPY cmake-build-release/wfQueue /home/
+COPY build/wfQueueTest /home/
 
 # Run the executable
-CMD /home/wfQueue
+CMD /home/wfQueueTest
