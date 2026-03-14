@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include <wfQueue.h>
+#include <wf_queue.h>
 
 #include <atomic>
 #include <barrier>
