@@ -19,7 +19,7 @@ target_compile_options(wait_free_queue INTERFACE -Wno-interference-size)
 
 # Tests
 enable_testing()
-add_executable(test_wait_free_queue tests/test_wfqueue.cpp)
+add_executable(test_wait_free_queue tests/test_wf_queue.cpp)
 target_link_libraries(test_wait_free_queue PRIVATE wait_free_queue GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(test_wait_free_queue)
