@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(red_black_tree
+project(wf_queue
   VERSION 0.1.0
   DESCRIPTION "MPSC Wait free queue in C++"
   LANGUAGES CXX
@@ -8,7 +8,7 @@ project(red_black_tree
 
 find_package(GTest CONFIG REQUIRED)
 
-# Header-only library target for red_black_tree
+# Header-only library target for wf_queue
 add_library(wait_free_queue INTERFACE)
 target_include_directories(wait_free_queue INTERFACE ${PROJECT_SOURCE_DIR}/include)
 target_compile_features(wait_free_queue INTERFACE cxx_std_23)
